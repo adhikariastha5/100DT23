@@ -8,6 +8,8 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+frontalimages_manuallyaligned_part1/
+frontalimages_manuallyaligned_part2/
 build/
 develop-eggs/
 dist/

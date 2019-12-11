@@ -1,0 +1,48 @@
+# First Lecture: Active Inference and Artificial Curiosity by Karl Friston
+- Talked about how to use minimum data efficiently rather than huge big data which are expensive,bias and so on.
+- He explained about how physics helps to take out the variational free, minimum energy for the optimization of model.
+- Thinking of answer gives enormous amount of information.
+- Difference between searching before eating and eating before searching.
+- He also talked about the optimization from the belief value before seeing data and the post belief after seeing data.
+- Also talked about importance of sleep for better model working like humans.
+# Second Lecture: Intro to AI and ML
+- AI is a big field or subject/discipline.
+- ML is a part of AI.
+- Deeplearning is another small part of ML.
+- Knowledge representation and reasoning::logics are represented as graph. We make logic based rules, these knowledge graphs uses massive knowledge bases. eg. Siri,Alexa,....
+- Dbpedia contains massive wikpedia information.
+- Data fusion comes free. From here we can know more about something.
+- The challenging part is to convert nlp to knowledge graph.
+- Google keeps the graph for google assistant.
+- Schema.org ---> google.com/insidesearch
+- Machine Learning::Supervised/Unsupervised,Regression/Classification
+- Bias 'b' can contain some threshold initially like for height even at 0 age it cannot be less than 40.
+- Mean square loss is popular loss function.
+- If loss is convex it gives global minimum.
+- If step is min,max then its like not happening or coming too slow.
+- We can take out loss using dot product.
+- ML classify:: transform input features to space; linear separation becomes possible.
+- For non-linear activation function:It needs more data;lot of parameters and figure out what function to learn.
+- Manual feature transformation i.e. human engineering is no longer needed.
+- CV: Go beyond human level vision capability
+- CNN,Attention(mask),Autoencoder(i/p as o/p same; used in bnw to color or remove noise like taar from picture)
+# Third Lecture
+- PCA::Convert into single dimension by eigen vector.
+- process include--->taking mean,variance(sub of main image with mean),eigen vectors and values,then select top 6 principal eigen vectors.
+- No category information,identity,lumination
+- LDA::Fisher faces--->incorporate label and constraint to take care of identity of person.
+- It takes scatter of class, within class scatter, between class scatter.
+- Same class together, different classes far.
+- Local Binary Patterns(LBP)::segment into different features local/global.
+- compare surrounding pixel into center pixel.
+- edges captured/abstract part
+- people only use consise knowledge.
+- Metric Learning:: mahalanobics
+- project features into small sub space of low dimension then use euclidean distance.
+- face image-->pair them(make label)--->Use metric Learning --->Same cluster together others far.
+- We can use LDA and metric Learning to make more realistic.
+- Learning Projection matrix:: trained using stochastic gradient descent
+- handcrafted feature because backprogation not till that part.
+- See also Deepface,Facenet,triplet loss
+# Face recognition Lab session
+- PCA value for given image
