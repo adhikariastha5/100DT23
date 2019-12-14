@@ -8,6 +8,9 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+STL-10.zip
+images_per_class/
+stl10_binary/
 frontalimages_manuallyaligned_part1/
 frontalimages_manuallyaligned_part2/
 build/
