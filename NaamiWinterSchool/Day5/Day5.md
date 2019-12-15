@@ -1,0 +1,86 @@
+# Probability by Samrachana Adhikari
+- Random Variables:: range in which these variables can lie. Discrete if finite or countably infinite.
+- eg. flipping coin has 2 range 0 or 1. range={0,1}
+- Probability Mass Function(PMF): how to compute probability in a given range. Discrete point or subset of mass points.
+- Probability of sample space add up to 1.(even in discrete)
+- Imp property::: Mean is expectation .
+- Variance is expectation and the value it takes and then taking square of the expectation.
+- See the properties of mean and variance.
+- E X=expectation
+- For scalar b is 0 in the variance. Last property.
+- Random variable with Bernoulli Distribution.
+- pmf px=1 or px=1
+- Binomial Distribution is sum of bernouli random variables
+- If you repeat the flip coin n times then getting head in n times probablity is a binomial distribution.
+- pr(X=k)=px(k)=(n k)p^k(1-p)^k
+- E(X)=np (Probability of each independent variables)
+- Geometric random variable. Taking out balls until we get red ball.
+- Each trial you have associate probability. pmf of x
+- slide no 32 try it
+- joined pmf becomes product of individual pmf. for all x,y
+- condn distribution becomes marginal distribution if independent.
+- Conditional independence :: product of joint is product of independent.
+- ind does not necessarily imply condn independence and vice versa.
+- expectation of x2 is not product of expectaion of x individually
+- so e(x-x) is never 0
+- properties of Independent random variables. See the workouts of properties.
+- no of success you have when you repeat bernouli trials is the binomial random variable.
+- does not depend on independent expectation of random variable.
+- Poisson is no of events occuring. (count of how many event we have)
+- see slide no 40 for mean and variance for different distribution types.
+- Continuous random variable
+- eg height, weight in neural network, Support/Range=big bracket(0,inf)
+- pdf is 1 when in normal distribution.
+- cdf is monotonicly increasing, x<=y then cdf of y is always greater or equal to cdf of x
+- x goes to - infinity it approach to 0
+- x goes to + infinity it approach to 1
+- for cont random variable we define it within a range a,b
+- xp(x)dx integrated over range of x is expectation
+- MLE slide no 51
+- loss function uses MLE.(likelihood based, maximimize called {need to ask} and minimizing by loss)
+- ratio of pro...........(bayes) see slide 53 imp imp
+- MAP estimate of meu
+- Sample from Posterior distribution(one of the method to compute)
+- L2 norm (mean square error loss)
+- bias and variance are inversely propertional. minimize variance and maximize bias (bia-variance trade off)
+# Object Detection and Uncertainty by Shreyasha
+- object detection: classification and localization
+- classification:: categories
+- localization: find continous values and make a box.
+- we find 4D vectors for each class instead of whole box
+- Two stage Detectors, One stage detector
+- rcnn  (paper) input image, interesting portion when is the object, take each proposed parts and classify into different classes.
+- fast rcnn it makes cnn faster, do same as before to find proposed region, we pass feature and make a single one, then it also do rol projection(rol pooling)(taking subset rather than full others).
+- faster rcnn same as fast rcnn but not region proposal again differently but in same nn. This is used nowadays. vgg network. (read paper)
+- feature extraction network, region proposal network,optimization: anchor boxes(this is sort of this image shape)
+- next is roi pooling;extract only features from roi
+- then rcnn to get only required part
+- one stage detectors: give anchor boxes smartly
+- YOLO is split iamge, cell to detect center of object, each cell predicts bounding box, confidence score, probability of object class
+- one stage detector(SSD) is lot similar to rcnn network.(optimize the anchor box)
+- problems of yolo ssd: miss little dar away objects: Improv is Retinanet in which instaed of backend feature they take feature pyramid network for object detection. Focal loss is same but change loss slightly not completely removed
+- NMS: non-max suppression-------> combine boxes that have overlap into a single boxes, if greater than defined threshold then only include and so on....
+- There are different choices depending on where we want to use mobile,gpu.....
+- arc is Faster-rcnn which needs gpu, Retinanet, Yolov3
+- Hyper-parameters like suze of image, no of proposal, anchor boxes, threshold scores we choose(try it)
+- 3D objet detection using different technique like depth map ans so on.
+- Approach: voxel based(x,y,z coord same as rccn but is point data cloud so not fetaure extractor and approcah diff)
+- Point RCNN- new(enc/dec arch)
+- Stereo RCNN -(pass through rcnn parallely and then get 3d combined)
+- Monocular Camera: M3D-RPN
+- App of Obj Detect : Self Driving, Warehouse robots,security,agriculture,........
+- Evaluate detection: IOU(Intersection Over Union)
+- Classification evaluate: Accuracy, Precision(FP-not detecting something), recall(FN-detecting something falsely)
+- AP(precision-recall should be high and AP is area under curve)
+- mAP( average of AP acroass all classes)
+- Coco Detection Metrics
+- Failure: Missed Detection,False detection,false classification,Partial detection but threshold not good enough.
+- Aleatoric Uncertainty- annotation is truth or not
+- Real world sensor noise,environment noise
+- Bayesian Probability Modeling. Posterior prop to Prior* Likelihood (Prior-what I think data looks like)(Likelihood- this is what I couurently think dis could be)(Posterior-{need to see})
+- Variance needs to be gaussian of bounding box in uncertainty of data,add another class and conf all low then unknown identify.
+- Read papers in the slide
+
+# 
+
+
