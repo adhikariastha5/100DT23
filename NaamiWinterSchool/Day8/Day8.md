@@ -17,4 +17,21 @@
 - For twins, it is difficult for us to recognize one from another. Uncertainity is their in reality too, not that we are not smart.
 - generative story, belief-hypothesis is that data is not generated randomly, there is smth happening that generate smth and this has uncertainty(intent and uncertainty prospective)
 - mixture-model(joined and marginial distribution----> imp)
-- 
+- auto-encoder(reconstruct through bottleneck)(it capture things that should not be captured)
+- Learn from 1 to 1 mapping
+- we want to map an image encode get some features and decode same image back.
+- We train one image for 1 person, instead of 1 image we can measure the group.
+- KL- Divergence(in cotext of vae)
+# Paper reading 
+- be efficient
+- abstract brings message within ( since it is the one where everyone looks)/summarize the content
+- intro which gives bulk. general framework/ don't make the booking; its going to deal with certain kind of issues. Fits on the format.
+- give background introduction, what it is based on. intro problems, split into two section the intro. How they position own work in the content like two splits. Weakness or not best solution should also be taken into account.
+- architecture in mid section or what it is . Then the overview section
+- good paper they give the result a clear proof but bad as spread points. They usely provide table, graph, git link and so on.
+- validate and so on.
+- bring all together so we get like a summary of something.
+- figures people see.
+- write paper then you need to compare performance with order arts, it cab be of complexity and other factors.
+- We need to understand why we validate. 
+- If we need to improve, what would you improve? Take shortcuts? What new you can do?
